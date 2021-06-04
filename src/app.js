@@ -6,7 +6,7 @@ const forecast = require('./utils/forecast')
 const { response } = require('express')
 
 const app = express()
-const port = process.argv[2]
+const port = process.env.PORT || 3000
 const publicDirPath = path.join(__dirname,'../public')
 const partialsPath = path.join(__dirname,'../templates/partials')
 const viewsPath = path.join(__dirname,'../templates/views')
